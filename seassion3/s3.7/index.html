@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <form action="index.html" method="post">
+        <tr>
+          <td>
+            <b><label for="fulname">Ho Va Ten</label></b>
+          </td>
+          <td><input type="text" name="fulname" id="fulname" /></td>
+        </tr>
+        <!-- email -->
+        <tr>
+          <td>
+            <b><label for="email">Email:</label></b>
+          </td>
+          <td><input type="text" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="Ngay sinh">Ngay sinh:</label></b>
+          </td>
+          <td>
+            <input type="date" name="Ngay sinh" id="Ngay sinh" />
+          </td>
+        </tr>
+        <td><label><b>gioi tinh:</b></label></td>
+        <td>
+          <input type="radio" value="nam" name="gender">
+          <label>nam</label>
+          <input type="radio" value="nam" name="gender">
+          <label>nu</label>
+        </td>
+        </tr>
+        <tr>
+          <td><b><label for="phone">so dien thoa</label></b></td>
+          <td><input type="number" name="so dien thoai" id="phone"></td>
+        </tr>
+        <tr>
+          <td><b><label for="majoy">chuyen nganh: </label></b></td>
+          <td><input type="text" name="majoy" id="majoy"></td>
+
+        </tr>
+        <tr>
+          <td><b><label for="nam nhap hoc">nam nhap hoc</label></b></td>
+          <td><input type="number" name="nam nhap hoc" id="nam nhap hoc" max="2025" min="2000"></td>
+        </tr>
+        <tr>
+          <td><b><label for="GPA">diem GPA:</label></b></td>
+          <td><input type="number" max="10"></td>
+        </tr>
+        <tr>
+          <td><b><label for="lop hoc">lop hoc:</label></b></td>
+          <td>
+            <select id="lop">
+              <option value="lop1">lop 1</option>
+              <option value="lop2">lop 2</option>
+              <option value="lop3">lop 3</option>
+              <option value="lop4">lop 4</option>
+              <option value="lop5">lop 5</option>
+              <option value="lop6">lop 6</option>
+              <option value="lop7">lop 7</option>
+              <option value="lop8">lop 8</option>
+              <option value="lop9">lop 9</option>
+              <option value="lop10">lop 10</option>
+              <option value="lop11">lop 11</option>
+              <option value="lop12">lop 12</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><b><label for="ngay">ngay dang ky  hoc:</label></b></td>
+          <td><input type="datetime-local" name="time" id="ngay"></td>
+        </tr>
+    
+        <tr><td><input type="submit" value="gui thong tin"></td></tr>
+      </form>
+    </table>
+  </body>
+</html>

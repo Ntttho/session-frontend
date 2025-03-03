@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <table>
+        <tr>
+          <td>
+            <b><label for="hvt">Ho va ten:</label></b>
+          </td>
+          <td><input type="text" name="name" id="hvt" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="ns">Ngay sinh:</label></b>
+          </td>
+          <td><input type="date" name="bithdat" id="ns" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="gt">Gioi tinh:</label></b>
+          </td>
+          <td>
+            <input type="radio" value="nam" />
+            <label>nam</label>
+            <input type="radio" value="nu" />
+            <label>nu</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="cccd">Can cuoc cong dan:</label></b>
+          </td>
+          <td><input type="number" id="cccd" name="cccd" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="nc">Ngay cap:</label></b>
+          </td>
+          <td><input type="date" name="ngay cap" id="nc" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="noc">Noi cap</label></b>
+          </td>
+          <td><input type="text" name="noi cap" id="noc" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="phone">So dien thoai:</label></b>
+          </td>
+          <td><input type="number" name="phonenumber" id="phone" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="email">Email</label></b>
+          </td>
+
+          <td><input type="text" name="email" id="email" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="address1">Dia chi thuong tru:</label></b>
+          </td>
+          <td><textarea name="address1" id="address1"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="address2">Dia chi tam tru:</label></b>
+          </td>
+          <td><textarea name="address2" id="address2"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="lcccd">Loai can cuoc cong dan:</label></b>
+          </td>
+          <td>
+            <input type="radio" value="can cuoc cong dan moi" name="cccd" />
+            <label>can cuoc cong dan moi</label>
+            <input type="radio" value="can cuoc cong dan cu" name="cccd" />
+            <label>can cuoc cong dan cu</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dantoc">Dan toc:</label></td>
+          <td><input type="text" name="dan toc" id="dantoc" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="tongiao">ton giao</label></b>
+          </td>
+          <td><input type="text" name="ton giao" id="tongiao" /></td>
+        </tr>
+        <tr>
+          <td>
+            <b><label>Quoc tich</label></b>
+          </td>
+          <td>
+            <input type="text" name="quoc tich" value="viet nam" disabled />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b><label for="htcm">Ho ten cha/me:</label></b>
+          </td>
+          <td><input type="text" name="hoten chame" id="htcm" /></td>
+        </tr>
+        <tr>
+          <td><label for="scccdcm">So CMND/CCCD cua me:</label></td>
+          <td><input type="number" id="scccdcm" name="cccdme" /></td>
+        </tr>
+        <tr>
+          <td><label for="tinh">Tinh/Thanh pho:</label></td>
+          <td>
+            <select name="tinh" id="tinh">
+              <option name="tinh thanh" selected disabled>tinh thanh</option>
+              <option value="tphcm">thanh pho ho chi minh</option>
+              <option value="tphcm">thanh pho ha noi</option>
+              <option value="tphcm">thanh pho vung tau</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="gui thong tin" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

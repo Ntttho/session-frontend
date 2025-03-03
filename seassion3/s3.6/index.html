@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="index.html" method="get">
+      <label for="sp">chon san pham</label>
+      <select name="sp" id="sp" multiple>
+        <option value="mp4">san pham 1</option>
+        <option value="mp2">san pham 2</option>
+        <option value="mp1">san pham 3</option>
+        <option value="mp0">san pham 4</option>
+        <option value="mp-1">san pham 4</option>
+      </select>
+      <br />
+      <label for="soluong">so luong</label>
+      <input type="number" name="soluong" id="soluong" /> <br />
+      <label for="address">dia chi giao hang</label>
+      <textarea
+        name="diachi"
+        id="address"
+        required
+        rows="4"
+        cols="20"
+      ></textarea>
+      <br />
+      <input type="submit" value="dat hang" />
+    </form>
+  </body>
+</html>
