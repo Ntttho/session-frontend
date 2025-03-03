@@ -1,0 +1,47 @@
+.h2 {
+  line-height: 2;
+}
+.color1 {
+  color: rgb(226, 39, 102);
+}
+.text {
+  text-align: center;
+  border: 2px green solid;
+  line-height: 3;
+  padding: 3;
+}
+.td {
+  background-color: rgb(233, 229, 225);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 3px;
+}
+.color2 {
+  color: rgb(190, 32, 32);
+}
+.color3 {
+  color: rgb(182, 40, 87);
+}
+.color4 {
+  color: rgb(10, 73, 245);
+}
+.border {
+  margin-left: 10px;
+  border-left: 4px green solid;
+}
+.mar {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.end {
+  background-color: rgb(46, 228, 46);
+  border-radius: 4px;
+  color: white;
+  padding: 10px 10px;
+  max-width: 150px;
+}
+.end:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
