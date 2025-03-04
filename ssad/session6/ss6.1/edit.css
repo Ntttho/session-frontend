@@ -1,0 +1,25 @@
+div {
+  width: 100%;
+  text-align: center;
+}
+.first1 {
+  background-color: rgb(7, 106, 199);
+}
+
+.dis {
+  display: flex;
+  background-color: rgb(253, 253, 252);
+}
+.second {
+  margin-left: 10%;
+  width: 100px;
+}
+
+.third {
+  margin-left: 5%;
+  text-align: left;
+}
+footer {
+  padding: 10px;
+  background-color: bisque;
+}

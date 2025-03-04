@@ -1,0 +1,68 @@
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+.outmenu {
+  display: flex;
+}
+img {
+  border-radius: 50px;
+}
+.head {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.portfolio {
+  font-size: larger;
+}
+.two {
+  padding-left: 22em;
+  font-size: small;
+  justify-content: flex-end;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bold;
+}
+.introduce {
+  padding-left: 20px;
+  display: flex;
+  text-align: justify;
+  margin-top: 20px;
+  align-items: center;
+  /* align-items giup ta can chinh phan tu theo chieu doc */
+}
+a:hover {
+  background-color: aqua;
+}
+.hello {
+  padding-left: 10px;
+}
+.project {
+  background-color: aliceblue;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.a {
+  background-color: black;
+  color: aliceblue;
+  border-radius: 4px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+.lienhe {
+  color: blue;
+}
+footer {
+  text-align: center;
+}

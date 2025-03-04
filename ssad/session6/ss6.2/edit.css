@@ -1,0 +1,41 @@
+/* form,
+input {
+  max-height: 300px;
+  border-radius: 3px;
+  border: 1px solid black;
+  max-width: 50%;
+}
+input {
+  max-width: 40%;
+}
+.dis {
+  margin: 0 auto;
+  padding: 10px;
+}
+h2,
+label {
+  margin: 0 auto;
+}
+dis {
+}
+.submit {
+  background-color: rgb(17, 204, 17);
+  border-radius: 3px;
+}
+.submitdiv {
+  text-align: center;
+} */
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+.div1 {
+  width: 20rem;
+  background-color: rgb(160, 174, 187);
+}
+.div2 {
+  width: 100%;
+  background-color: white;
+  border: 0.5px solid black;
+}

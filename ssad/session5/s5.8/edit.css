@@ -1,0 +1,9 @@
+h4 {
+  color: blue;
+}
+p {
+  color: rgb(143, 131, 131);
+}
+.bord {
+  border-right: 5px solid rgb(133, 130, 126);
+}

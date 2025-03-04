@@ -1,0 +1,38 @@
+th,
+td {
+  border: 0.5px solid #f7f6f6;
+}
+th{
+    color: white;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: antiquewhite;
+  text-align: center;
+}
+thead {
+  background-color: rgb(40, 114, 250);
+}
+.action {
+  text-align: center;
+}
+.row2,
+.row4 {
+  background-color: white;
+}
+.view {
+  background-color: rgb(18, 238, 18);
+}
+.update {
+  background-color: rgb(248, 182, 2);
+}
+.delete{
+    background-color: rgb(204, 5, 5);
+}
+td{
+    padding: 8px;
+}
+th{
+    padding: 10px;
+}
