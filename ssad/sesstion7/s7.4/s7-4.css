@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  width: 40%;
+  height: 30%;
+  margin-left: 20%;
+}
+.img {
+  width: 100%;
+}
+h2 {
+  border-left: 6px solid orange;
+  margin-bottom: 1%;
+  padding-left: 3%;
+}
+.span {
+  position: absolute;
+  width: 40%;
+  height: 30vh;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  bottom: 15%;
+}
+span {
+  font-weight: bold;
+  line-height: 40px;
+  opacity: 0.6;
+}

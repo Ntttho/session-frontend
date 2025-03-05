@@ -3,12 +3,15 @@ div {
   text-align: center;
 }
 .first1 {
-  background-color: rgb(7, 106, 199);
+  background-color: rgb(78, 151, 219);
+  font-size: medium;
+  text-decoration: none;
 }
 
 .dis {
   display: flex;
   background-color: rgb(253, 253, 252);
+  align-items: center;
 }
 .second {
   margin-left: 10%;
@@ -18,6 +21,7 @@ div {
 .third {
   margin-left: 5%;
   text-align: left;
+  font-size: large;
 }
 footer {
   padding: 10px;

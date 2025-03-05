@@ -1,0 +1,33 @@
+.s {
+  width: 400px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+.s-item {
+  border-bottom: 1px solid #ccc;
+}
+.s-toggle {
+  display: none;
+}
+.s-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #ccc;
+  position: relative;
+}
+.s-header .arrow {
+  transition: transform 0.3s ease;
+}
+.s-toggle:checked + label .arrow {
+  transform: rotate(180deg);
+}
+.content {
+  padding: 15px;
+  display: none;
+}
+.s-toggle:checked + label + .content {
+  display: block;
+}
