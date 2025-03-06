@@ -33,3 +33,6 @@
 .accordion-toggle:checked + label .arrow {
   transform: rotate(180deg);
 }
+input {
+  max-width: 60%;
+}

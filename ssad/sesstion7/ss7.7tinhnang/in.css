@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.format {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  place-items: center;
+  background-color: blueviolet;
+}
+.tieu-de {
+  width: 100%;
+  height: 20%;
+  display: grid;
+  place-items: center;
+}
+.thamkhao {
+  width: 100%;
+  height: 10%;
+  background-color: antiquewhite;
+}
+
+.box3-form {
+  width: 50%;
+  height: 30%;
+  background-color: rgb(127, 202, 202);
+  display: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: seagreen;
+  border-image: initial;
+}
+.checkbox {
+  display: none;
+}
+.checkbox:checked ~ .box3-form {
+  display: block;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: azure;
+  height: 20px;
+  display: grid;
+  place-items: center;
+}
+.gui-yeu-cau + label {
+  border: 0.4px solid cadetblue;
+}

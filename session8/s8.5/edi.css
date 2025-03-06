@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  text-align: center;
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+.infor p{
+  opacity: 0.8;
+  font-weight: normal;
+}
+.button {
+  display: grid;
+  margin-top: 30px;
+}
+button{
+  font-weight: bold;
+  border-radius: 0.3px solid rgb(180, 174, 174);
+}
+h2{
+  padding: 30px;
+}
+.download{
+  color: white;
+  background-color: rgb(22, 238, 22);
+  border: none;
+}
+hr{
+  width: 100px;
+  margin: 0 auto;
+}
+button {
+  padding: 10px 20px 10px 20px;
+}
+.icon i {
+padding: 20px;
+font-size: large;
+}
+.icon, footer{
+  opacity: 0.7;
+}
+a{
+  color: black;
+  text-decoration: none;
+}

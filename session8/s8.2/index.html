@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="ed.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="index.html" method="post">
+        <div class="box1">
+          <div>
+            <label for="Name">Name</label> <br />
+            <input type="text" name="Name" id="Name" class="text" />
+          </div>
+          <br />
+          <div>
+            <label for="Email">Email</label> <br />
+            <input type="text" name="Email" id="Email" class="text" />
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="textarea">
+          <label for="Message">Message</label> <br />
+          <textarea
+            name="Message"
+            id="Message"
+            style="width: 90%; height: 200px"
+          ></textarea>
+        </div>
+        <div style="position: relative; left: 5%">
+          <input
+            style="
+              width: 120px;
+              height: 40px;
+              border-radius: 3px;
+              background-color: rgb(235, 227, 227);
+            "
+            type="submit"
+            value="SEND MESSAGE"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

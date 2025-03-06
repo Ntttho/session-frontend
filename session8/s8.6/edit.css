@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  background-color: black;
+  color: #ccc;
+}
+#submit {
+  display: none;
+  width: 100%;
+}
+.search {
+  background-color: white;
+  border-radius: 30px;
+  margin: 30px;
+  width: 90%;
+  justify-content: left;
+}
+input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+}
+.color1 {
+  color: #ccc;
+}
+.icon-search {
+  padding: 10px;
+}

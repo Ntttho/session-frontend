@@ -1,0 +1,30 @@
+.body {
+  position: absolute;
+  left: 5%;
+  text-align: left;
+  justify-content: center;
+  width: 90%;
+}
+.h2 {
+  border-bottom: 2px solid red;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+.bold {
+  font-weight: bold;
+  font-size: large;
+}
+.td {
+  width: 300px;
+}
+.button {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  border: 1px solid red;
+  color: red;
+}
