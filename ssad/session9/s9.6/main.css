@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: 20px;
+}
+.container {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box1 {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+.big1 {
+  width: 49.5%;
+  background-color: rgb(40, 29, 51);
+}
+.big2 {
+  width: 49.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.small {
+  width: 49%;
+  height: 48%;
+  background-color: rgb(40, 29, 51);
+}
+.big1,
+.small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
