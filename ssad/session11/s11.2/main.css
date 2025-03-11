@@ -1,0 +1,67 @@
+/* 
+desktop ----------
+95
+calc(100-2.5*3)/2
+95
+30 30 30 
+gap=2.5
+Sử dụng media query + bộ thuộc tính flexbox. 
+Khi thu nhỏ giao diện ≤ 1024px thì chuyển đổi giao diện giống như dưới
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.a {
+  width: 95%;
+  height: 15%;
+  background-color: aqua;
+}
+.b1,
+.b2 {
+  width: 46%;
+  height: 35%;
+  background-color: #220a0a;
+}
+.c1,
+.c2,
+.c3 {
+  width: 31%;
+  height: 40%;
+  background-color: blueviolet;
+}
+/* yeahsir  */
+@media screen and (max-width: 1024px) {
+  .a,
+  .b,
+  .c {
+    width: 95%;
+  }
+  .a {
+    height: 8%;
+  }
+  .b {
+    height: 30%;
+  }
+  .c1 {
+    height: 30;
+  }
+  .c3,
+  .c2 {
+    display: none;
+  }
+}
