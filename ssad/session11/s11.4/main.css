@@ -74,6 +74,10 @@ Xây dựng giao diện dành cho 3 thiết bị giống như phía dưới
   }
 }
 @media (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
   .A {
     height: 8%;
     display: flex;
@@ -88,6 +92,13 @@ Xây dựng giao diện dành cho 3 thiết bị giống như phía dưới
     height: 15%;
     display: flex;
     justify-content: space-between;
+  }
+  .c {
+    width: 30%;
+    height: 30%;
+  }
+  .b{
+    height: 40%;
   }
   .D .d {
     display: block;

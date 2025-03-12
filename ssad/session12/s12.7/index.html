@@ -9,7 +9,104 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+      .container {
+        width: 40%;
+        text-align: start;
+        margin-left: 100px;
+        
+      }
+      .row {
+        left: 0px;
+      }
+      .div1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .div2{
+        width: 48%;
+      }
+      .div3{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn{
+        width: 100%;
+      }
+    h2{
+        padding: 20px 0px 10px 0px;
+    }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>Payment</h2>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault1"
+        />
+        <label class="form-check-label" for="flexRadioDefault1">
+          Credit card
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+          checked
+        />
+        <label class="form-check-label" for="flexRadioDefault2">
+          Debit card
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+          checked
+        />
+        <label class="form-check-label" for="flexRadioDefault2"> Paypal </label>
+      </div>
+      <div>
+        <form class="row g-3 div1">
+            <div class="col-md-4 div2">
+              <label for="validationDefault01 " class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="validationDefault01" required="" fdprocessedid="0f8m8e">
+            </div>
+            <div class="col-md-4 div2">
+              <label for="validationDefault02 " class="form-label">Credit card number</label>
+              <input type="text" class="form-control" id="validationDefault02" required="" fdprocessedid="gaaug">
+            </div>
+        </div>
+            <p>Full name as displayed on card</p>
+
+            <div class="div3">
+                <div class="col-md-6">
+                  <label for="validationDefault03" class="form-label">Expiration</label>
+                  <input type="text" class="form-control" id="validationDefault03" required="" fdprocessedid="869ns">
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault05" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="validationDefault05" required="" fdprocessedid="o1kg0d">
+                </div>
+            </div>
+            <hr></hr>
+            
+          </form>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit" fdprocessedid="ufnftc">Continue to checkout</button>
+          </div>
+      </div>
+    </div>
+  </body>
 </html>
