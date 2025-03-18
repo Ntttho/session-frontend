@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const pi = 3.14159;
+      let r = +prompt("nhap vao ban kinh hinh cau");
+
+      let V = (4 / 3) * pi * Math.pow(r, 3);
+      console(`the tich hinh cau: ${V}\n`);
+
+      let Smc = 4 * pi * Math.pow(r, 2);
+      console.log(`chu vi mat cau: ${Smc}\n`);
+
+      let P_hinhcau = Math.pow(2*r,2)  + 2*pi*Math.pow(r,2);
+      console.log(`chu vi hinh cau: ${P_hinhcau}\n`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>dang nhap phan mem</h1>
+    <script>
+      let S = prompt("nhap vao vi tri kiem tra dang nhap");
+      if (S == "Admin") {
+        let pass = prompt("nhap mat khau vao");
+        if (pass == "TheMater") {
+          console.log("welcome");
+        } else if (pass == null) {
+          console.warn("cancelled");
+        } else {
+          console.error("Wrong password");
+        }
+      } else if (S == null) {
+        console.warn("cancelled");
+      } else {
+        console.error("I don't know you");
+      }
+    </script>
+  </body>
+</html>
+<!-- 
+console
+warm: canh bao
+error: loi
+log: in ra bthuong
+
+//nhap va hien thi du lieu qua cua so
+alert: 
+prompt
+confirm: xac nhan(tra ve boolean)
+
+cach taon bang trong console
+console.table(["apple", "ograne", "potato"]);
+
+
+-->

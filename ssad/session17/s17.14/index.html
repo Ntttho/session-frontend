@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const pi = 3.14159;
+      let r = +prompt("nhap vao ban kinh");
+      let h = +prompt("nhap vao chieu cao");
+
+      let Sxp = 2 * pi * r * h;
+      console.log(`dien tich xung quanh: ${Sxp} \n`);
+
+      let Stp = Sxp + 2 * 2 * pi * r;
+      console.log(`dien tich toan phan: ${Stp} \n`);
+
+      let V = Math.pow(r, 2) * pi * h;
+      console.log(`the tich tru tron: ${V} \n`);
+
+      let P_2day = 2*2*pi*r;
+      console.log(`chu vi 2 day: ${P_2day} \n`)
+    </script>
+  </body>
+</html>
