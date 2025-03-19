@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = Number(prompt("nhap vao canh a"));
+      let b = Number(prompt("nhap vao canh b"));
+      let c = Number(prompt("nhap vao canh c"));
+        if( (a+b > c) || (b+c>a) || (a+c>b)){
+      if (a == b && b == c) {
+        alert("tam giac deu");
+      } else if (
+        (a == b && a != c) ||
+        (a == c && a != b) ||
+        (b == c && b != a)
+      ) {
+        alert("tam gia can");
+      } else if ((a * a + b * b == c*c) || (a * a + c * c == b*b) || (c * c + b * b == a*a)){
+        alert("tam gia vuong");
+      } else{
+        alert("tam giac thuong");
+      }
+    } else{
+        alert("tam giac khong hop le");
+    }
+    </script>
+  </body>
+</html>
+a

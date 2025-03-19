@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = Number(prompt("nhap vao 1 so kiem tra doi xung"));
+      let a = input;
+      let check = 0;
+      while (input !== 0) {
+        check = check * 10 + (input % 10);
+        input = parseInt(input / 10);
+      }
+      if (a === check) {
+        console.log(`so ${a} la so doi xung`);
+      } else {
+        console.log(`so ${a} la so khong doi xung`);
+      }
+    </script>
+  </body>
+</html>

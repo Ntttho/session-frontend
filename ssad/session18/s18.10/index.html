@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soNhap = parseInt(prompt("Nhập vào số nguyên (0-999):"));
+
+      if (soNhap < 0 || soNhap > 999) {
+        console.log("Số không hợp lệ");
+      } else {
+        const donVi =[
+          "không",
+          "một",
+          "hai",
+          "ba",
+          "bốn",
+          "năm",
+          "sáu",
+          "bảy",
+          "tám",
+          "chín",
+        ];
+        const hangChuc =[
+          "",
+          "mười",
+          "hai mươi",
+          "ba mươi",
+          "bốn mươi",
+          "năm mươi",
+          "sáu mươi",
+          "bảy mươi",
+          "tám mươi",
+          "chín mươi",
+        ];
+        const hangTram =[
+          "",
+          "một trăm",
+          "hai trăm",
+          "ba trăm",
+          "bốn trăm",
+          "năm trăm",
+          "sáu trăm",
+          "bảy trăm",
+          "tám trăm",
+          "chín trăm",
+        ];
+
+        if (soNhap === 0) {
+          console.log("không");
+        } else {
+          let ketQua = "";
+          const tram = Math.floor(soNhap / 100);
+          const chuc = Math.floor((soNhap % 100) / 10);
+          const donvi = soNhap % 10;
+          if (tram > 0) {
+            ketQua += hangTram[tram];
+            if (chuc > 0 || donvi > 0) {
+              ketQua += " ";
+            }
+          }
+          if (chuc > 1) {
+            ketQua += hangChuc[chuc];
+            if (donvi > 0) {
+              ketQua += " ";
+            }
+          } else if (chuc === 1) {
+            if (donvi === 1) {
+              ketQua += "mười một";
+            } else if (donvi === 5) {
+              ketQua += "mười lăm";
+            } else if (donvi > 0) {
+              ketQua += "mười " + donVi[donvi];
+            } else {
+              ketQua += "mười";
+            }
+          }
+          if (chuc !== 1 && donvi > 0) {
+            if (donvi === 5 && chuc > 0) {
+              ketQua += "lăm";
+            } else {
+              ketQua += donVi[donvi];
+            }
+          }
+          console.log(ketQua);
+        }
+      }
+    </script>
+    <!-- code co su tham khao AI -->
+  </body>
+</html>

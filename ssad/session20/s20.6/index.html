@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // so nguyen to
+        let input = Number(prompt("nhap vao 1 so kiem tra so nguyen to"));
+        let check = 1;
+        if(input % 1 ===0 && input > 2){
+            for(let i = 2; i * i <= input; i++){
+                if(input % i == 0){
+                    check =0;
+                    break;
+                }
+            }
+        }
+        if(check == 1){
+            console.log(`${input} la so nguyen to`);
+        }else{
+            console.log(`${input} khong la so nguyen to`);
+
+        }
+    </script>
+</body>
+</html>

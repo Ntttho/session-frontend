@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for (var i = 1; i < 10; i++) {
+          for (var j = 0; j < 10; j++) {
+            for (var k = 0; k < 10; k++) {
+              var arm = i*i*i + j*j*j + k*k*k;
+              var check = i*100 + j*10 + k;
+              if(arm === check){
+                  console.log(arm);
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = Number(prompt("nhap vao so so fibonicy"));
+      let f1 = 1;
+      let f2 = 1;
+      for (let i = 0; i < input; i++) {
+        document.writeln(`${f1} `);
+        let tamp = f2;
+        f2 = f1 + f2;
+        f1 = tamp;
+      }
+    </script>
+  </body>
+</html>

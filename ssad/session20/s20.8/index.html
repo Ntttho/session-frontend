@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = Number(prompt("nhap vao 1 so in ra so nguyen to"));
+      let i = 2;
+      while (input) {
+        let check = 1;
+
+        for (let j = 2; j <= Math.sqrt(i); j++) {
+          if (i % j == 0) {
+            check = 0;
+            break;
+          }
+        }
+        if (check == 1) {
+          document.writeln(i + "  ");
+          input--;
+        }
+        i++;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = parseFloat(prompt("Nhập a: "));
+      let b = parseFloat(prompt("Nhập b: "));
+      let c = parseFloat(prompt("Nhập c: "));
+      if (a === 0) {
+        console.log("khong phai phuong trinh bac 2.");
+      } else {
+        let delta = b * b - 4 * a * c;
+        if (delta < 0) {
+          console.log("vo nghiem");
+        } else if (delta === 0) {
+          let x = -b / (2 * a);
+          console.log(`nghiem kep: x1= x2 = ${x}`);
+        } else {
+          let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+          let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+          console.log(`phuong trinh co 2 nghiem: x1 = ${x1}, x2 = ${x2}`);
+        }
+      }
+      // Nhập hệ số từ người dùng
+    </script>
+  </body>
+</html>

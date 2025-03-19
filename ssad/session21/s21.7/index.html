@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tienbandau = Number(prompt("nhap so tien ban dau"));
+      let laisuat = Number(prompt("nhap vao lai suat")) / 100;
+      let sothang = Number(prompt("nhap vao so thang gui"));
+
+      let tongtien = tienbandau * Math.pow(1 + laisuat, sothang);
+
+      console.log(`tong tien nhan duoc: ${tongtien}`);  
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = Number(prompt("nhap vao mot so va in ra uoc"));
+        document.writeln(`cac uoc cua phan tu vua nhap:`);
+        for(var i =1; i<=input; i++){
+            if(input % i === 0){
+                document.writeln(i + "  ");
+            }
+        }
+    </script>
+</body>
+</html>

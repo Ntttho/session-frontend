@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = prompt("nhap vao gia tri tien te");
+      let money = Number(prompt("nhap vao so tien chuyen doi"));
+      if (input === "VND") {
+        let dollar = money/23000;
+        console.log(`so tien chuyen doi: ${dollar} $`);
+      } else if(input === "USA"){
+        let viet = money*23000;
+        console.log(`so tien chuyen doi: ${viet} dong`);
+      }
+    </script>
+  </body>
+</html>

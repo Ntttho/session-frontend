@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = Number(prompt("nhap vao so a"));
+      let b = Number(prompt("nhap vao so b"));
+      let result = 1;
+      if (a > 0 && a % 1 === 0 && b > 0 && b % 1 === 0) {
+        for (let i = 0; i < b; i++) {
+          result = a * result;
+        }
+        console.log(`ket qua cua phep luy thua a^b la: ${result}`);
+      } else {
+        console.warn("du lieu dau vao khong hop le");
+      }
+    </script>
+  </body>
+</html>
