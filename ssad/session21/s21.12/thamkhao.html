@@ -1,0 +1,26 @@
+<!-- Viết chương trình hiển thị thay đổi 10 màu sắc ngẫu nhiên khi hiển thị console.log() -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        }
+
+        for (let i = 0; i < 10; i++) {
+        const randomColor = getRandomColor();
+        console.log(`%cMàu ngẫu nhiên ${i + 1}: ${randomColor}`, `color: ${randomColor}`);
+        }
+    </script>
+</body>
+</html>

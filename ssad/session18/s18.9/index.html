@@ -21,13 +21,12 @@
       ) {
         console.log("du lieu khong hop le");
       } else {
-        if (gio > 12 || gio === 0) {
-          gio   = Math.abs(gio - 12);
-          chuoi = `${gio}:${phut}:${giay} PM`;
-          console.log(chuoi);
+        if(gio > 12){
+          console.log(`${gio - 12}:${phut}:${giay} PM`);
+        } else if(gio === 0) {
+          console.log(`12:${phut}:${giay} AM`);
         } else {
-          chuoi = `${gio}:${phut}:${giay} AM`;
-          console.log(chuoi);
+          console.log(`${gio}:${phut}${giay} AM`);
         }
       }
     </script>

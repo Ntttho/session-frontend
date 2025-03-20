@@ -1,0 +1,29 @@
+<!-- Viết chương trình yêu cầu người dùng nhập vào một số nguyên n bất kỳ, in ra n số nguyên tố đầu tiên. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var i = 2;
+      let input = Number(prompt("nhap vao so so nguyen to ma ban muon in ra"));
+      while (input) {
+        let check = 1;
+        for (let j = 2; j <= Math.sqrt(i); j++) {
+          if (i % j === 0) {
+            check = 0;
+            break;
+          }
+        }
+        if (check === 1) {
+          console.log(i);
+          input--;
+        }
+        i++;
+      }
+    </script>
+  </body>
+</html>
