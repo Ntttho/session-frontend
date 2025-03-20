@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = Number(prompt("nhap vao so tien ban muon rut"));
+      let tien1 = 500000;
+      let tien2 = 200000;
+      let tien3 = 100000;
+      let tien4 = 50000;
+      let tien5 = 20000;
+      let tien6 = 10000;
+      let tien7 = 5000;
+      let tien8 = 2000;
+      let tien9 = 1000;
+
+      
+      if (input % 1000 == 0) {
+        if (input >= tien1) {
+          let count = Math.floor(input / tien1);
+          input = input - tien1 * count;
+          document.writeln(`500000-${count} to <br>`);
+        }
+        if (input >= tien2) {
+            let count = Math.floor(input / tien2);
+          input = input - tien2 * count;
+          document.writeln(`200000-${count} to <br>`);
+        }
+        if (input >= tien3) {
+            let count = Math.floor(input / tien3);
+          input = input - tien3 * count;
+          document.writeln(`100000-${count} to <br>`);
+        }
+        if (input >= tien4) {
+            let count = Math.floor(input / tien4);
+          input = input - tien4 * count;
+          document.writeln(`50000-${count} to <br>`);
+        }
+        if (input >= tien5) {
+            let count = Math.floor(input / tien5);
+          input = input - tien5 * count;
+          document.writeln(`20000-${count} to <br>`);
+        }
+        if (input >= tien6) {
+            let count = Math.floor(input / tien6);
+          input = input - tien6 * count;
+          document.writeln(`10000-${count} to <br>`);
+        }
+        if (input > tien7) {
+            let count = Math.floor(input / tien7);
+          input = input - tien7 * count;
+          document.writeln(`5000-${count} to <br>`);
+        }
+        if (input >= tien8tien9) {
+            let count = Math.floor(input / tien8);
+          input = input - tien8 * count;
+          document.writeln(`2000-${count} to <br>`);
+        }
+        if (input >= tien9) {
+            let count = Math.floor(input / tien9);
+          input = input - tien9 * count;
+          document.writeln(`1000-${count} to <br>`);
+        }
+      }
+    </script>
+  </body>
+</html>

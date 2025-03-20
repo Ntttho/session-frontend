@@ -1,0 +1,24 @@
+<!-- Viết chương trình hiển thị thay đổi 10 màu sắc ngẫu nhiên khi hiển thị console.log() -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- cach tô màu = console.log ==> `%cchuoivanban`,`color: red` -->
+    <!-- co the lam mã màu bằng các số liệu từ 1->255 qua rgb -->
+    <script>
+      
+
+      for (var i = 0; i < 10; i++) {
+        let r = Math.floor(Math.random() * 254) + 1;
+      let g = Math.floor(Math.random() * 254) + 1;
+      let b = Math.floor(Math.random() * 254) + 1;
+        let rgb = `rgb(${r},${g},${b})`;
+        console.log(`%cMàu ngẫu nhiên`, `color: ${rgb}`);
+      }
+    </script>
+  </body>
+</html>
