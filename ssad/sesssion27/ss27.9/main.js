@@ -1,0 +1,3 @@
+function sapxepsochan(arr) {
+    a
+}

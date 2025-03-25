@@ -7,12 +7,43 @@
   </head>
   <body>
     <script>
+      document.writeln(`hinh1<br>`);
       for (var i = 1; i <= 10; i++) {
         for (var j = 10; j >= i; j--) {
           console.log("*");
           document.writeln("*");
         }
         console.log("\n");
+        document.writeln("<br>");
+      }
+      document.writeln("hinh2<br>");
+      for (let i = 0; i <= 10; i++) {
+        for (let j = 10 - i; j <= 10; j++) {
+          document.writeln("*");
+        }
+        document.writeln("<br>");
+      }
+      // for(let i = 0;)
+      document.writeln("hinh3<br>");
+      for (let i = 0; i <= 10; i++) {
+        for (let j = 0; j <= 10; j++) {
+          if (j + i >= 10) {
+            document.writeln("*");
+          } else {
+            document.writeln("_");
+          }
+        }
+        document.writeln("<br>");
+      }
+      document.writeln("hinh4<br>");
+      for (let i = 0; i <= 10; i++) {
+        for (let j = 0; j <= 10; j++) {
+          if (j + i <= 10) {
+            document.writeln("*");
+          } else {
+            document.writeln("_");
+          }
+        }
         document.writeln("<br>");
       }
     </script>
