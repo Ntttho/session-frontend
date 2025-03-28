@@ -139,7 +139,7 @@ function loc(list) {
     if (member.price > 25000) {
       member["type"] = "gia cao";
     } else {
-      member.["type"] = "gia thap";
+      member["type"] = "gia thap";
     }
   }
 }
