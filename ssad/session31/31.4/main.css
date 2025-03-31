@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+}
+.modal {
+  display: none;
+}
+.show{
+  width: 350px;
+  background-color: antiquewhite;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  left: 300px;
+}
+#icon {
+  width: 300px;
+  margin: 5px;
+  text-align: end;
+}
+p {
+  width: 300px;
+  text-align: center;
+}
+.bg{
+    background-color: rgb(153, 150, 140);
+}

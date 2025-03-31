@@ -1,0 +1,21 @@
+#container{
+    display: flex;
+    justify-content: left;
+    border: 1px solid black;
+}
+
+#green{
+    background-color: green;
+}
+#red{
+    background-color: red;
+}
+#purple{
+    background-color: purple;
+}
+.box{
+    width: 100px;
+    height: 120px;
+    margin: 10px;
+    border: solid 1px black;
+}
