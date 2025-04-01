@@ -30,8 +30,3 @@ let todoList = [
     completed: false,
   },
 ];
-let ul = document.getElementById("myUL");
-
-for (let i = 2; i < todoList.length; i++) {
-  ul.innerHTML += `<li>${todoList[i].task}<span class="close">X</span></li>`
-}

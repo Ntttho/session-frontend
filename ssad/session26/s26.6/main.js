@@ -1,17 +1,13 @@
-function capsocong(arr) {
-  if (!Array.isArray(arr) || arr.length <= 2) {
-    return "du lieu khong hop le";
+function date(arr) {
+  if (!Array.isArray(arr)) {
+    return "khong phai la mang";
   }
-  let result = true;
-  arr.filter((num, index, arr) => {
-    if (index >= 2) {
-      if (arr[index] - arr[index - 1] !== arr[index - 1] - arr[index - 2]) {
-        result = false;
-      }
-    }
+  if (arr.length < 1) {
+    return "mang khong chua phan tu nao";
+  }
+  return arr.map((member) => {
+    let check = new Date(member);
+    return check;
   });
-  return result;
 }
-console.log(capsocong([0, -4, -8, -12]));
-console.log(capsocong([2, 4, 6, 8, 11]));
-console.log(capsocong("abcabc"));
+console.log(date(["11/02/2001", "3/22/2001", "10/12/2006"]));

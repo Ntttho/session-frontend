@@ -1,0 +1,26 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+#box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+.img {
+  width: 100%;
+}
+.divanh {
+  width: 300px;
+  height: 500px;
+}
+.position {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

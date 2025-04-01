@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+.nhapvao {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+}
+#add {
+  width: 50px;
+  height: 22px;
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-top: 5px;
+  background-color: #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

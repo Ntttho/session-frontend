@@ -1,29 +1,27 @@
-let users = [];
+let arr = [
+  { id: 1, name: "element" },
+  { id: 1, name: "element" },
+  { id: 1, name: "element" },
+  { id: 1, name: "element" },
+];
+showlist(arr);
+function showlist(list) {
+  let div = document.getElementById("list");
+  // while (div.firstChild) {
+  //   console.log(div.firstChild);
+  //   div.removeChild(div.firstChild);
+  // }
+  console.log(div);
 
-function registerEmail() {
-  let email = prompt("Nhập email đăng ký: ");
-  let emailRegex = /^[^\s@]+@[^\s@]+\.(com|vn)$/;
+  console.log(div.querySelectorAll("p"));
 
-  if (!emailRegex.test(email)) {
-    alert("Email không hợp lệ! Vui lòng nhập lại.");
-    return;
+  let lists = div.querySelectorAll("p");
+
+  for (let element of div.querySelectorAll("p")) {
+    div.removeChild(element);
   }
-
-  if (users.includes(email)) {
-    alert("Tài khoản đã tồn tại!");
-  } else {
-    users.push(email);
-    alert("Đăng ký thành công!");
-  }
+  let p = document.createElement("p");
+  div.appendChild(p);
+  console.log(div.querySelectorAll("p"));
+  console.log(div);
 }
-let password = prompt("Nhập mật khẩu để kiểm tra độ mạnh: ");
-if (password !== null) {
-  alert(
-    password +
-      (isStrongPassword(password)
-        ? " là mật khẩu mạnh."
-        : " không phải là mật khẩu mạnh.")
-  );
-}
-
-registerEmail();
