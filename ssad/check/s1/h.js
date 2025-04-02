@@ -4,24 +4,19 @@ let arr = [
   { id: 1, name: "element" },
   { id: 1, name: "element" },
 ];
-showlist(arr);
-function showlist(list) {
-  let div = document.getElementById("list");
-  // while (div.firstChild) {
-  //   console.log(div.firstChild);
-  //   div.removeChild(div.firstChild);
-  // }
-  console.log(div);
+xoa(arr);
 
-  console.log(div.querySelectorAll("p"));
+function xoa(list) {
+  let ul1 = document.querySelector("ul#list");
+  let li_ul = ul1.querySelectorAll("li");
+  console.log(ul1);
+  console.log(li_ul);
 
-  let lists = div.querySelectorAll("p");
-
-  for (let element of div.querySelectorAll("p")) {
-    div.removeChild(element);
+  let xoa = document.querySelectorAll(".xoa");
+  console.log(xoa);
+  for(let i = 0; i<xoa.length; i++){
+    xoa[i].addEventListener(("click"), ()=>{
+      ul1.removeChild(li_ul[i]);
+    } )
   }
-  let p = document.createElement("p");
-  div.appendChild(p);
-  console.log(div.querySelectorAll("p"));
-  console.log(div);
 }
