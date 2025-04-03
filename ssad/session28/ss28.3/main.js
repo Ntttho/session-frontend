@@ -1,3 +1,5 @@
+// bai 4
+
 let rectangle = {
   w: 10,
   h: 5,

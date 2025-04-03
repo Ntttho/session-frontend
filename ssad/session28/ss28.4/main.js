@@ -1,3 +1,4 @@
+// bai nay bai 3 nha
 let book = {
   title: "JavaScript Basics",
   author: "John Smith",
