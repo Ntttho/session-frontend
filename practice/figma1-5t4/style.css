@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 1400px;
+}
+
+nav{
+    width: 1400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.imgLogo{
+    width: 50px;
+}
+.navhead{
+    width: 1300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.furniro{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation{
+    width: 430px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigationbyicon{
+    width: 230px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigationbyicon a{
+    font-size: 1em;
+}
+.head{
+    width: 1400px;
+    height: 815px;
+    background: url(./a11f805aade2224f1d6658764a2395df.jfif) no-repeat center;
+    background-size: cover ;
+}
+.box1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.box1_img{
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+}
+.box1_img div img{
+    padding-top: 30px;
+    width: 381px;
+    height: 480xp;
+}
+.box1_img div p{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.card-limit{
+    position: relative;
+    width: 285px;
+    max-height: 550px;
+    margin-bottom: 30px;
+}
+.img-limit1{
+    max-height: 350px;
+    width: 100%;
+}
+.box2{
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box2-1{
+    width: 1236px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.in-card{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(39, 37, 37);
+    opacity: 0.6;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.in-card button{
+    width: 90%;
+    height: 30px;
+}
+.in-card a{
+    margin: 3px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: medium;
+    color: white;
+}
+.card:hover .in-card{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    cursor: pointer;    
+    /* ho chuot va chuyen thanh poiter */
+}
+.color{
+    background-color: blanchedalmond;
+    color: brown;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.box3{
+    width: 1400px;
+    height: 670px;
+    position: relative;
+}
+.pos3-1 h3{
+    font-weight: bold;
+    font-size: 2.2em;
+}
+.pos3-1{
+    position: absolute;
+    width: 420px;
+    height: 150px;
+    top: 233px;
+    left: 100px;
+}
+.Explore{
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    width: 176px;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+.pos3-2{
+    width: 1200px;
+    height: 580px;
+    background-color: antiquewhite;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 570px;
+    top: 45px;
+}
+.imgPo1{
+    position: relative;
+}
+.imgpo2{
+    width: 370px;
+    height: 480px;
+}
+.imgPo1 img{
+    width: 400px;
+    height: 580px;
+}
+.pos3-2>p{
+    position: absolute;
+    top: 500px;
+    left: 530px;
+}
+.imgPo2 button{
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #ccc;
+    position: absolute;
+}
+.box3img{
+    position: relative;
+}
+.imgnext{
+    position:absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    top: 200px;
+    right: 5px;
+    background-color: aqua;
+}
+.o_style{
+    width: 27px;
+    height: 27px;
+    color: brown;
+    background-color:antiquewhite;
+    border-radius: 50%;
+    text-align: center;
+}
+.inforpos{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 400px;
+    left: 25px;
+    background-color: white;
+}

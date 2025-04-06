@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.navbar{
+    width: 1285px;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imglogo{
+    width: 50px;
+    height: 50px;
+}
+.direction{
+    width: 430px;
+    height: 25px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-direction{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.body1{
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1-body1{
+    width: 1240px;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+}
+.trai span{
+    color: black;
+}
+.trai p{
+    color: #ccc;
+}
+.trai{
+    font-weight: 400;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.phai{
+    display: flex;
+    /* align-items: center; */
+    padding-left: 10px;
+    font-weight: 500;
+    border-left: 1px solid black;
+}
+.body2{
+    width: 1440px;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+}
+.boximg{
+    width: 1240px;
+    height: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trai1{
+    width: 553px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-nho{
+width: 76px;
+height: 415px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.imgnho .item{
+    width: 75px;
+    height: 55px;
+}
+.imglon-item{
+    width: 423px;
+    height: 500px;
+}
+.phai1{
+    width: 605px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.star5{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.button-size{
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.button-size button{
+    width: 30px;
+}
+.size{
+    width: 125px;
+    height: 60px;
+}
+.title button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.button-choice{
+    width: 605px;
+    display: flex;
+    justify-content: space-between;
+}
+.mount button, .mount input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 0.7em;
+    border: none;
+    background-color:white;
+}
+.mount{
+    width: 125px;
+    height: 65px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.add-to-cart{
+    width: 215px;
+    height: 65px;
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 20px;
+}
+.third, .first{
+    min-width: 70px;
+}
+.td{
+    padding: 10px;
+}
+.second{
+    width: 20px;
+}
+.body3{
+    width: 1440px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.b3-1{
+    width: 649px;
+    height: 36px;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.b3-2{
+    width: 1026px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+.b3-3{
+    width: 1239px;
+    height: 348px;
+    display: flex;
+    justify-content: space-between;
+}
+.b3-3img{
+    width: 605px;
+    height: 348px;
+}
+.body4{
+    width: 1440px;
+    height: 777px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.body4 div{
+    width: 1236px;
+    height: 446px;
+}
+.body4 button{
+    width: 245px;
+    height: 48px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body4-list-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 285px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.body4-list-card div{
+    width: 285px;
+    display: flex;
+    justify-content: space-around;
+}
+.pc{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.cardimg{
+    width: 285px;
+    max-width: 285px;
+    min-height: 300px;
+    max-height: 300px;
+    object-fit: 285px 300px;
+}

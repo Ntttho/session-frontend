@@ -22,7 +22,6 @@ let employees = [
   [
     { id: 3, name: "asdfasfsf", position: "Project Manager" },
     { id: 1, name: "Nguyen Van B", position: "Developer" },
-    { id: 2, name: "Nguyen Van C", position: "Designer" },
   ],
 ];
 //
@@ -58,10 +57,10 @@ function showlist(list) {
     tr.appendChild(tdPosition);
   });
 }
-
+showlist(employees[0]);
 // tao thanh dieu huong phan trang
-let x = 1;
-let j = x;
+let x = 0;
+let j = 0;
 function pageSplit(list) {
   let div = document.getElementsByClassName("btn-page-split")[0];
   div.innerHTML = "";
@@ -87,18 +86,20 @@ function pageSplit(list) {
       btnNext.disabled = false;
     }
   });
+  // kiem tra ban dau
+  if (x == 0) {
+    btnPrevious.disabled = true;
+  }
   // duyet lay phan tu phan trang
   for (let i = 1; i <= list.length; i++) {
     let btni = document.createElement("button");
 
-    if (i != 0) {
-      btni.classList.add("btn");
-      btni.classList.add("btn-success");
-      btni.classList.add("button");
-      btni.classList.add("check");
-      btni.textContent = i;
-      div.appendChild(btni);
-    }
+    btni.classList.add("btn");
+    btni.classList.add("btn-success");
+    btni.classList.add("button");
+    btni.classList.add("check");
+    btni.textContent = i;
+    div.appendChild(btni);
 
     // khi click vao thi show list
     btni.addEventListener("click", () => {
@@ -138,10 +139,45 @@ function pageSplit(list) {
     if (x == employees.length - 1) {
       btnNext.disabled = true;
     }
-    if (x > 1) {
+    if (x >= 1) {
       btnPrevious.disabled = false;
     }
   });
-
 }
 pageSplit(employees);
+function addNewEmployee() {
+  // lay ra 2 the input va lay ra the button them nhan vien
+  let inputName = document.getElementById("nameEmployee");
+  let inputPosition = document.getElementById("position");
+  let btnAddNewEmployee = document.getElementById("addNewEmployee");
+
+  // them nhan vien
+  btnAddNewEmployee.addEventListener("click", () => {
+    let name = inputName.value;
+    let pos = inputPosition.value;
+    if (pos != "" && name != "") {
+      if (employees[employees.length - 1].length < 3) {
+        let ob = {};
+        ob.id = Math.round(Math.random() * 100000 ** 2);
+        ob.name = name;
+        ob.position = pos;
+        employees[employees.length - 1].push(ob);
+
+        alert("them moi nhan vien thanh cong");
+        pageSplit(employees);
+      } else {
+        console.log("asdf");
+
+        let id = Math.round(Math.random() * 100000 ** 2);
+
+        let arr = [{ id: id, name: name, position: pos }];
+        employees.push(arr);
+        alert("them moi nhan vien thanh cong");
+        pageSplit(employees);
+      }
+    }
+    inputName.value = "";
+    inputPosition.value = "";
+  });
+}
+addNewEmployee();

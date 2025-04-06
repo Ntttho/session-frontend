@@ -1,0 +1,64 @@
+.login-button {
+    background-color: #15c59f;
+    color: #fff;
+    font-size: 1em;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin: 2px;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    color: #067e3c;
+    font-size: 1.5em;
+    transition: 0.3s color;
+}
+
+.login-button:hover {
+    background-color: #067e3c;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.2em;
+}
+
+.btn-close:focus,
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #ccc;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: rgb(7, 6, 6);
+}
+
+@media(min-width: 900px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: aqua;
+        visibility: hidden;
+        transition: 0.3 ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        visibility: visible;
+        width: 100%;
+    }
+}
