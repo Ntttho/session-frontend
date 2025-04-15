@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <input type="text" id="input" />
-    <button id="xoa">them</button>
-    <ul id="list">
-      <li>
-        <span>hello ae</span>
-        <button class="xoa">xoa</button><button class="sua">sua</button>
-      </li>
-      <li>
-        <span>hello ae</span>
-        <button class="xoa">xoa</button><button class="sua">sua</button>
-      </ul>
-      </li>
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách sản phẩm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container my-4">
+    <h2 class="mb-4">Tìm kiếm sản phẩm</h2>
 
-    
-    <script src="h.js"></script>
-  </body>
+    <div class="input-group mb-4">
+      <input type="text" id="searchInput" class="form-control" placeholder="Tìm sản phẩm...">
+      <button class="btn" id="searchBtn">Search</button>
+    </div>
+
+    <div id="productContainer" class="row row-cols-1 row-cols-md-3 g-4"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
 </html>
-
-<!-- 
-cookies: khi van luu thong tin dang nhap, thong tin phien, gui len server
-local Storage: khi can luu du lieu don gian lau dai khong gui len server, cai dat ca nhan
-Session Storage: khi luu du lieu tam thoi, mat ngay sau khi dong tab hoac trinh duyet
-IndexedDB: khi van luu tru luong lon du lieu cau truc phuc tap, ho tro offline, progressive web App (PWA)
--->
